@@ -47,7 +47,7 @@
   "postCreateCommand": "bash .devcontainer/post-create.sh",
 
   "remoteEnv": {
-    "PATH": "${containerEnv:PATH}:/home/vscode/.local/share/solana/install/active_release/bin"
+    "PATH": "${containerEnv:PATH}:/home/node/.local/share/solana/install/active_release/bin"
   },
 
   "forwardPorts": [],

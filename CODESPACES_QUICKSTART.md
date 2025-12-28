@@ -155,11 +155,23 @@ npm install
 
 ## Getting RPC Endpoints
 
-For best performance, get free RPC endpoints from:
+For best performance, get RPC endpoints from reliable providers:
 
-- **Helius**: https://helius.dev (recommended)
-- **QuickNode**: https://quicknode.com
-- **Alchemy**: https://alchemy.com
+### Recommended Providers
+
+| Provider | Free Tier | Rate Limits | Best For | Notes |
+|----------|-----------|-------------|----------|-------|
+| **Helius** | 100 req/sec | Generous limits | General use, testing | Recommended - Great free tier |
+| **QuickNode** | 15M credits/month | Varies by plan | Production use | Reliable, good performance |
+| **Alchemy** | 300M compute units | Daily limits | Development | Good for testing |
+
+**Getting Started:**
+1. Sign up for a free account at your chosen provider
+2. Create a new Solana project/app
+3. Copy the HTTP and WebSocket RPC URLs
+4. Add them to your `.env` file as `RPC_ENDPOINT` and `RPC_WEBSOCKET_ENDPOINT`
+
+**Tip:** Start with Helius for development, then consider upgrading to a paid tier for production trading.
 
 ## Next Steps
 
