@@ -37,7 +37,6 @@ sell.log
 *.swp
 *.swo
 *~
-.DS_Store
 
 # OS
 Thumbs.db

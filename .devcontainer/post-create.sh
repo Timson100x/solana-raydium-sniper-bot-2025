@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -e
 
 # Post-create script for Solana Raydium Sniper Bot development environment
 echo "🚀 Setting up Solana Raydium Sniper Bot development environment..."

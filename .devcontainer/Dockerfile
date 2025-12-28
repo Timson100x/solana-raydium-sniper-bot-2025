@@ -25,12 +25,7 @@ RUN apt-get update && apt-get install -y \
 # Switch to vscode user for installations
 USER vscode
 
-# Install Rust (already included via feature, but ensuring it's properly set up)
-RUN if ! command -v rustc &> /dev/null; then \
-    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --default-toolchain stable; \
-    fi
-
-# Add Rust to PATH
+# Add Rust to PATH (Rust is installed via devcontainer feature)
 ENV PATH="/home/vscode/.cargo/bin:${PATH}"
 
 # Install Solana CLI
