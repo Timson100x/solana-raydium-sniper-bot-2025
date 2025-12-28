@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "ms-vscode.vscode-typescript-next",
+    "rust-lang.rust-analyzer",
+    "vadimcn.vscode-lldb",
+    "github.copilot"
+  ]
+}
