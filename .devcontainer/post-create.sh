@@ -56,3 +56,9 @@ echo ""
 echo "📖 For more information, check the README.md file"
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo ""
+
+# Run environment validation
+echo "🔍 Running environment validation..."
+echo ""
+bash .devcontainer/validate-environment.sh || true
+echo ""
