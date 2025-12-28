@@ -30,6 +30,31 @@ To run the script you need to:
 
 ![](readme/jupiterwrap.png)
 
+## GITHUB CODESPACES (RECOMMENDED FOR DEVELOPMENT)
+You can now develop and test this bot directly in your browser using GitHub Codespaces! The repository includes a pre-configured development environment with all required tools:
+
+✅ **What's Included:**
+- Node.js 18 & TypeScript
+- Rust toolchain
+- Solana CLI (v1.18.22)
+- All required VS Code extensions
+- Automatic dependency installation
+
+🚀 **Quick Start:**
+1. Click the "Code" button on GitHub → "Create codespace on main"
+2. Wait for the environment to build (5-10 minutes first time)
+3. Create your `.env` file with your configuration
+4. Run `npm run start` to launch the bot
+
+📚 **Full Documentation:** See [`.devcontainer/README.md`](.devcontainer/README.md) for detailed instructions, including:
+- Connecting to Solana Devnet for testing
+- Creating test wallets
+- Getting RPC endpoints
+- Troubleshooting guide
+
+> [!TIP]
+> Codespaces is perfect for testing on Devnet before running on mainnet. The environment is pre-configured with Solana CLI pointing to Devnet by default.
+
 ## CONFIG
 1. Configure the script by updating `.env.example` file (**remove the .example from the file name when done, make sure its .env extension**).
 2. `PRIVATE_KEY` (your wallet private key)
