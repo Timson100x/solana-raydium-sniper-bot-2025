@@ -23,8 +23,10 @@ The Codespaces environment comes pre-configured with:
 
 ### Configuration
 - Solana CLI pre-configured to use **Devnet** by default
+- Solana CLI installed via official stable release channel (https://release.solana.com/stable/install)
 - Automatic npm dependency installation
 - Port forwarding for local Solana validator (8899, 8900)
+- PATH environment configured in devcontainer.json for persistent access to Solana binaries across all terminal sessions
 
 ## Getting Started with Codespaces
 

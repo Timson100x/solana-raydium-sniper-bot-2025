@@ -12,10 +12,13 @@ YELLOW='\033[1;33m'
 NC='\033[0m' # No Color
 
 # Install Solana CLI
+# Using official Solana installation script from https://docs.solana.com/cli/install-solana-cli-tools
+# The stable release channel provides a tested and verified version
 echo -e "${YELLOW}Installing Solana CLI...${NC}"
 sh -c "$(curl -sSfL https://release.solana.com/stable/install)"
 
-# Add Solana to PATH for this session
+# Add Solana to PATH for this session (script execution)
+# Note: PATH is also configured in devcontainer.json for all future terminal sessions
 export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
 
 # Verify Solana installation
