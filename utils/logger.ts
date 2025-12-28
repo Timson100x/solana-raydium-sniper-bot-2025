@@ -1,4 +1,5 @@
 import winston from 'winston';
+import pino from 'pino';
 
 export const setUpLogger = () => {
   return winston.createLogger({
@@ -29,3 +30,26 @@ export const setUpLogger = () => {
     ],
   });
 };
+
+// Export a basic pino logger for use in constants and other modules
+const transport = pino.transport({
+  targets: [
+    {
+      level: 'trace',
+      target: 'pino-pretty',
+      options: {},
+    },
+  ],
+});
+
+export const logger = pino(
+  {
+    level: 'trace',
+    redact: ['poolKeys'],
+    serializers: {
+      error: pino.stdSerializers.err,
+    },
+    base: undefined,
+  },
+  transport,
+);
