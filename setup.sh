@@ -2,12 +2,30 @@
 
 # Solana Raydium Sniper Bot - Development Environment Setup Script
 # This script sets up the development environment for local development
+# Supported: Linux, macOS, and Windows with WSL/Git Bash
 
 set -e
 
 echo "=================================================="
 echo "Solana Raydium Sniper Bot - Dev Environment Setup"
 echo "=================================================="
+echo ""
+
+# Check if we're on a supported platform
+OS_TYPE=$(uname -s)
+case "$OS_TYPE" in
+    Linux*|Darwin*)
+        echo "✅ Detected supported OS: $OS_TYPE"
+        ;;
+    MINGW*|MSYS*|CYGWIN*)
+        echo "✅ Detected Windows with Unix tools: $OS_TYPE"
+        ;;
+    *)
+        echo "❌ Unsupported operating system: $OS_TYPE"
+        echo "This script is designed for Linux, macOS, or Windows with WSL/Git Bash"
+        exit 1
+        ;;
+esac
 echo ""
 
 # Check Node.js
