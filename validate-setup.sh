@@ -62,7 +62,7 @@ echo ""
 # Check TypeScript compilation (without emitting)
 echo "✓ Checking TypeScript compilation..."
 if npx tsc --noEmit --skipLibCheck 2>&1 | grep -q "error"; then
-    echo "  ⚠️  TypeScript has compilation warnings"
+    echo "  ⚠️  TypeScript has compilation errors"
     echo "  Note: constants/constants.ts has unused imports but won't affect runtime"
 else
     echo "  TypeScript compiles successfully ✓"
