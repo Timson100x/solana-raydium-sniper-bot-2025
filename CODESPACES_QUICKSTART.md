@@ -159,6 +159,9 @@ For best performance, get RPC endpoints from reliable providers:
 
 ### Recommended Providers
 
+> **Note**: Rate limits and pricing information below is current as of December 2024. 
+> Always verify current limits and pricing directly with the provider as they may change.
+
 | Provider | Free Tier | Rate Limits | Best For | Notes |
 |----------|-----------|-------------|----------|-------|
 | **Helius** | 100 req/sec | Generous limits | General use, testing | Recommended - Great free tier |

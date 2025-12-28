@@ -52,9 +52,11 @@
 
   "forwardPorts": [],
 
-  "remoteUser": "node",
+  "remoteUser": "node"
 
-  "mounts": [
-    "source=${localEnv:HOME}${localEnv:USERPROFILE}/.solana,target=/home/node/.solana,type=bind,consistency=cached"
-  ]
+  // Note: mounts section is commented out - uncomment if you want to persist Solana config locally
+  // Uses HOME on Unix/Mac and USERPROFILE on Windows for cross-platform compatibility
+  // "mounts": [
+  //   "source=${localEnv:HOME}${localEnv:USERPROFILE}/.solana,target=/home/node/.solana,type=bind,consistency=cached"
+  // ]
 }

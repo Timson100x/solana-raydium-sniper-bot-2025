@@ -4,6 +4,8 @@ set -e
 echo "🚀 Setting up Solana Raydium Sniper Bot Development Environment..."
 
 # Install Solana CLI
+# Note: This uses the official Solana installer from release.solana.com
+# For enhanced security, you can verify the installer script before running
 echo "📦 Installing Solana CLI..."
 sh -c "$(curl -sSfL https://release.solana.com/stable/install)"
 
