@@ -20,6 +20,46 @@ Depending on the speed of the RPC node, the purchase usually happens before the 
 > [!NOTE]
 > This is provided as is, for learning purposes.
 
+## GITHUB CODESPACES SUPPORT 🚀
+
+This repository is fully configured for **GitHub Codespaces**, providing a complete cloud-based development environment with zero local setup required!
+
+### Quick Start with Codespaces
+
+1. Click the **"Code"** button on GitHub
+2. Select **"Create codespace on main"**
+3. Wait 3-5 minutes for the environment to build
+4. Everything is pre-installed and configured:
+   - ✅ Node.js 20.x & TypeScript
+   - ✅ Solana CLI (latest stable)
+   - ✅ Rust toolchain
+   - ✅ All npm dependencies
+   - ✅ VS Code extensions for Solana/Rust/TypeScript development
+
+### What You Get
+
+The Codespaces environment includes:
+- **Solana CLI** pre-configured for Devnet
+- **Development tools** (TypeScript, Rust Analyzer, Prettier, ESLint)
+- **Port forwarding** for local Solana validator testing
+- **Comprehensive documentation** in `.devcontainer/README.md`
+
+### Testing on Devnet
+
+Perfect for safe testing without risking real funds:
+```bash
+# Solana CLI is already configured for Devnet
+solana config get
+
+# Request test SOL
+solana airdrop 2
+
+# Run the bot
+npm run start
+```
+
+📖 **Full Codespaces documentation:** See [.devcontainer/README.md](.devcontainer/README.md)
+
 ## SETUP
 To run the script you need to:
 1. Use your Solana Wallet
