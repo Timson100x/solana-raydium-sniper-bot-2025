@@ -51,9 +51,23 @@ To run the script you need to:
 ![](readme/env.png)
   
 ## INSTALL
+
+### GitHub Codespaces (Recommended for Quick Setup)
+Open this repository in GitHub Codespaces for a fully configured development environment with Solana CLI, Rust, and all dependencies pre-installed.
+
+1. Click **Code** → **Codespaces** → **Create codespace**
+2. Wait for the environment to set up automatically
+3. Configure your `.env` file (copy from `.env.example`)
+4. Run: `npm run start`
+
+📚 **See [DEVELOPMENT.md](DEVELOPMENT.md) for comprehensive setup and testing instructions**
+
+### Local Installation
 1. Navigate the bot by typing `cd (bot file location)`
 2. Install dependencies by typing: `npm install`
 3. Run the script by typing: `npm run start` in terminal
+
+For detailed setup instructions, testing on Devnet, and debugging guide, see [DEVELOPMENT.md](DEVELOPMENT.md).
 
 ![](readme/preview.png)
 
